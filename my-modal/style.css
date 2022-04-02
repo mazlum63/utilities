@@ -1,0 +1,60 @@
+.modal-open {
+    display: block !important;
+    opacity: 1 !important;
+    z-index: 100 !important;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.w-100 {
+    width: 100%;
+    z-index: -100;
+}
+.modal .modal-link {
+    position: fixed;
+    top: 50vh;
+    right: 50px;
+    z-index: 101;
+    cursor: pointer;
+}
+.modal .modal-link img {
+    width: 150px;
+}
+.modal .modal-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+.modal .modal-container form {
+    text-align: center;
+    padding: 50px 30px;
+    margin-top: 50px;
+    transition: all 0.3s linear;
+}
+.modal .modal-container.modal-open form {
+    margin-top: 0;
+}
+.modal .modal-container form label {
+    font-size: 2rem;
+    color: #3a674b;
+    margin: 10px;
+}
+.modal .modal-container form .form-item {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    border: 2px solid #3a674b;
+    outline: none;
+    margin: 10px 0;
+    resize: none;
+}
+.modal .modal-container form button {
+    padding: 30px 60px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: #3a674b;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="fade1">
+        <div class="carousel-fade">
+            <button class="btn-carousel carousel-prev">
+                <div class="carousel-arrow"></div>
+            </button>
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="./blog_1.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./blog_2.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./blog_3.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./blog_4.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./blog_5.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./blog_6.jpg" alt="">
+                </div>
+            </div>
+            <button class="btn-carousel carousel-next">
+                <div class="carousel-arrow arrow-right"></div>
+            </button>
+            <div class="carousel-navigation"></div>
+        </div>
+    </section>
+    <section id="fade2">
+        <div class="carousel-fade">
+            <button class="btn-carousel carousel-prev">
+                <div class="carousel-arrow"></div>
+            </button>
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="./blog_1.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./blog_2.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./blog_3.jpg" alt="">
+                </div>
+            </div>
+            <button class="btn-carousel carousel-next">
+                <div class="carousel-arrow arrow-right"></div>
+            </button>
+            <div class="carousel-navigation"></div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+    <script>
+        // 1-carousel id --- 2-autoplay --- 3-autoplay time --- 4-navigation buttons --- 5-arrows
+        var fade1 = new carouselFade('#fade1');
+        var fade2 = new carouselFade('#fade2', sliderOptions = {
+            auto: true,
+            time: 3,
+            reverse: true,
+            nav: true,
+            arrows: true
+        });
+    </script>
+</body>
+
+</html>

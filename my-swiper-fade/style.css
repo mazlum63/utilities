@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-fade {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.carousel-fade .carousel-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.carousel-fade .carousel-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+}
+.carousel-fade .carousel-item-active {
+    z-index: 1 !important;
+    opacity: 1 !important;
+    animation: fade-effect 0.5s ease-in-out;
+}
+@keyframes fade-effect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.carousel-fade .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-fade .btn-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    left: 5%;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-fade .carousel-arrow {
+    width: 25px;
+    height: 25px;
+    border-top: 5px solid #000;
+    border-left: 5px solid #000;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.carousel-fade .carousel-next {
+    left: unset;
+    right: 5%;
+}
+
+.carousel-fade .arrow-right {
+    transform: rotate(135deg);
+}
+
+.carousel-fade .carousel-navigation {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    z-index: 5;
+}
+
+.carousel-fade .btn-navigation {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-fade .btn-active {
+    background-color: #3a674b !important;
+}

@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumorchid;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    background-color: #000;
+    z-index: 1;
+}
+.navbar .navbar-item {
+    list-style: none;
+    padding: 20px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+.navbar .navbar-item span {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s linear;
+    transition-delay: 0.5s;
+    opacity: 0;
+}
+.navbar .navbar-item:hover span {
+    opacity: 1;
+}
+
+.navbar .walker {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .navbar-item:nth-child(1):hover ~ .walker {
+    background-color: #8a2be2;
+}
+.navbar .navbar-item:nth-child(2):hover ~ .walker {
+    background-color: #7fff00;
+}
+.navbar .navbar-item:nth-child(3):hover ~ .walker {
+    background-color: #ff8c00;
+}
+.navbar .navbar-item:nth-child(4):hover ~ .walker {
+    background-color: #ff1493;
+}
+.navbar .navbar-item:nth-child(5):hover ~ .walker {
+    background-color: #0000cd;
+}

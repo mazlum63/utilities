@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section {
+    padding: 10%;
+}
+p {
+    font-size: 2rem;
+}
+.text {
+    position: relative;
+}
+.parallax {
+    width: 250px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+section:nth-child(1) img {
+    left: 20%;
+}
+section:nth-child(2) img {
+    left: 70%;
+}

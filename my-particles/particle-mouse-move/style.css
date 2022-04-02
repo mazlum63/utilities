@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.particle-mouse-move {
+    width: 100%;
+    min-height: 100vh;
+}
+.particle-mouse-move .mouse-move-item {
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.3s linear;
+}

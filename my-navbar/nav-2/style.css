@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar-circle .nav-container {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-circle .nav-container button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 2s;
+}
+.navbar-circle .nav-container.active button {
+    transform: rotate(315deg);
+}
+.navbar-circle .nav-container button svg {
+    color: blueviolet;
+    width: 30px;
+    height: 30px;
+}
+.navbar-circle .nav-container ul {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+.navbar-circle .nav-container li {
+    list-style: none;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: 100px;
+    transition: all 1s;
+    left: 0;
+    transform: rotate(0deg);
+}
+
+.navbar-circle .nav-container a {
+    color: blueviolet;
+}
+.navbar-circle .nav-container a svg {
+    width: 30px;
+    height: 30px;
+    transition: all 1s;
+    transform: rotate(0deg);
+}

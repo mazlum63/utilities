@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.find-name {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.find-name h1 {
+    margin-bottom: 50px;
+}
+
+.find-name .hided-name {
+    text-align: center;
+}
+.find-name .hided-name h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.find-name .hided-name-container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.find-name .letter {
+    margin: 0 5px;
+    width: 20px;
+    position: relative;
+    text-align: center;
+}
+.find-name .letter span {
+    opacity: 0;
+}
+
+.find-name .letter.show span{
+    opacity: 1;
+}
+
+.find-name .letter:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: aqua;
+    opacity: 1;
+}
+
+.find-name .alphabet {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.find-name .alphabet button {
+    padding: 5px;
+    border: none;
+    background-color: aqua;
+    margin: 5px;
+    font-weight: bold;
+    outline: none !important;
+}
+
+.find-name .footer {
+    margin-top: 30px;
+    text-align: center;
+}
+.find-name .footer button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    outline: none;
+    border: none;
+    opacity: 0;
+    pointer-events: none;
+}

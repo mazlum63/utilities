@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-vertical {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-vertical .carousel-container {
+    position: relative;
+    height: 500px;
+    transition: all 0.5s;
+}
+
+.carousel-vertical .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-vertical .carousel-img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.carousel-vertical .carousel-caption {
+    position: absolute;
+    z-index: 2;
+    bottom: 100px;
+    left: 10%;
+    text-align: center;
+    width: 80%;
+    word-wrap: break-word;
+    color: blue;
+}
+
+.carousel-vertical h1 {
+    font-size: 2rem;
+}
+
+.carousel-vertical p {
+    font-size: 2rem;
+}
+
+.carousel-vertical .btn-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    left: 5%;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-vertical .btn-carousel.btn-vertical {
+    top: 5%;
+    transform: translateY(none);
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.carousel-vertical .carousel-arrow {
+    width: 25px;
+    height: 25px;
+    border-top: 5px solid #000;
+    border-left: 5px solid #000;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+}
+.carousel-vertical .btn-vertical .carousel-arrow {
+    transform: rotate(45deg);
+}
+
+.carousel-vertical .carousel-next {
+    left: unset;
+    right: 5%;
+}
+.carousel-vertical .carousel-next.btn-vertical {
+    top: unset;
+    bottom: 5%;
+    right: unset;
+}
+
+.carousel-vertical .arrow-right {
+    transform: rotate(135deg);
+}
+.carousel-vertical .btn-vertical .arrow-right {
+    transform: rotate(-135deg);
+}
+
+.carousel-vertical .carousel-navigation {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+}
+ /* if you want to use navigation buttons vertical use this */
+.carousel-vertical .carousel-navigation.nav-vertical {
+    top: 50%;
+    bottom: unset !important;
+    left: unset !important;
+    right: 30px !important;
+    transform: translateX(none) !important;
+    transform: translateY(-50%) !important;
+    flex-direction: column;
+    align-self: center;
+}
+
+.carousel-vertical .btn-navigation {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.carousel-vertical .nav-vertical .btn-navigation {
+    margin: 5px 0;
+    display: block;
+}
+
+.carousel-vertical .btn-active {
+    background-color: #3a674b !important;
+}

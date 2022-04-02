@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section {
+    display: inline;
+}
+.js-cart-1 {
+    max-width: 100%;
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    perspective: 1000px;
+}
+
+.js-cart-1 .js-cart-container {
+    background: #6959db;
+    background: linear-gradient(45deg, #43c0ad, #6959db);
+    width: 320px;
+    height: 320px;
+    transform-style: preserve-3d;
+    padding: 20px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.js-cart-1 .js-cart-container > * {
+    transition: all 0.5s linear;
+}
+.js-cart-1 .js-cart-container:hover > * {
+    transform: translateZ(30px);
+}
+.js-cart-1 h1 {
+    margin: 20px 0;
+}
+.js-cart-1 p {
+    margin: 20px 0;
+}
+.js-cart-1 .cart-img-container {
+    background-color: #fff;
+    padding: 25px;
+}
+.js-cart-1 img {
+    width: 100px;
+}

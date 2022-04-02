@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cart-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.cart-2 .css-cart {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s linear;
+    transform-style: preserve-3d;
+    background-color: transparent;
+}
+.cart-2 .css-cart:hover {
+    transform: rotateY(180deg);
+}
+
+.cart-2 .cart-front {
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.cart-2 .cart-back {
+    background-image: url('./raum.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}

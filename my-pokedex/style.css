@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(90deg, rgb(11, 11, 209), rgb(226, 10, 226));
+}
+
+.pokemon-list {
+    margin-top: 50px;
+}
+
+.pokemon-list h1 {
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.pokemon-list label {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.pokemon-list .poke-search {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pokemon-list .poke-search input {
+    color: #000;
+    border-radius: 0;
+    border: none;
+    outline: none !important;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.pokemon-list .poke-search button {
+    border: none;
+    background-color: #fff;
+}
+.pokemon-list .poke-search svg {
+    width: 30px;
+}
+
+.pokemon-list .poke-container {
+    display: flex;
+    justify-content:center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.pokemon-list .poke-container .poke-item {
+    width: 300px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    transition: 0.3s all linear;
+    box-shadow: 0 0 20px 0 #222;
+}
+.pokemon-list .poke-container .poke-item:hover {
+   transform: scale(1.05);
+}
+.pokemon-list .poke-img {
+    width: 100%;
+    padding: 30px;
+}
+.pokemon-list .poke-name {
+    font-weight: bold;
+}
+.pokemon-list p {
+    font-size: 1rem;
+    margin: 5px 0;
+}

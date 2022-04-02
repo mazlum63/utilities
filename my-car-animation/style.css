@@ -1,0 +1,91 @@
+.animatedcar .road {
+    animation: road 10s linear infinite;
+}
+.animatedcar .car {
+    animation: car 2s linear;
+}
+#caranim {
+    margin-top: 100px;
+    position: relative;
+    padding-top: 100px;
+    overflow: hidden;
+}
+#caranim .road {
+    position: absolute;
+    top: 30px;
+    width: 500%;
+    height: 75px;
+    background-image: url("./road.jpg");
+    background-repeat: repeat-x;
+    animation-delay: 2s;
+    z-index: -1;
+}
+#caranim .car {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 200px;
+    height: 85px;
+}
+#caranim .kurs-car {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+}
+#caranim .wheel-1 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 2%;
+    left: 146px;
+    animation: wheel 1s linear infinite;
+}
+#caranim .wheel-2 {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    bottom: 2%;
+    left: 23px;
+    animation: wheel 1s linear infinite;
+}
+@keyframes wheel {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes car {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 45%;
+    }
+}
+@keyframes road {
+    100% {
+        transform: translateX(-2500px);
+    }
+}
+
+@media (max-width: 767.98px) {
+    #caranim .car {
+        left: 25%;
+    }
+    @keyframes car {
+        from {
+            left: 0px;
+        }
+        to {
+            left: 25%;
+        }
+    }
+    @keyframes road {
+        100% {
+            transform: translateX(-1000px);
+        }
+    }
+}

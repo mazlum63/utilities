@@ -1,0 +1,25 @@
+.square {
+    width: 90%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    left: 5%;
+}
+
+.square .square-item {
+    box-shadow: 0px 0px 30px 18px rgba(0,0,0,0.33);
+    position: absolute;
+    transition: all 0.15s linear;
+}
+.square .item-0 {
+    background-color: saddlebrown;
+}
+.square .item-1 {
+    background-color:skyblue;
+}
+.square .item-2 {
+    background-color: rgb(185, 37, 94);
+}
+.square .item-3 {
+    background-color: rgb(19, 139, 25);
+}

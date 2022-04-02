@@ -1,0 +1,40 @@
+.accordion {
+    width: 100%;
+}
+.accordion .accordion-item {
+    transition: all 0.3s linear;
+}
+.accordion .accordion-header {
+    width: 100%;
+    background-color: blueviolet;
+    color: #fff;
+    text-align: left;
+    border: none;
+    padding: 10px;
+    position: relative;
+}
+.accordion .accordion-header:before,
+.accordion .accordion-header:after {
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: all 0.3s linear;
+}
+.accordion .accordion-header:after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.accordion .accordion-container {
+    transition: all 0.3s linear;
+    width: 100%;
+    overflow: hidden;
+}
+
+.accordion .accordion-item.active .accordion-header:after {
+    transform: translateY(-50%) rotate(0deg);
+}

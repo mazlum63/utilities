@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="caranim" class="animatedcar">
+        <div class="car">
+            <img src="./car.png" alt="" class="kurs-car">
+            <img class="wheel-1" src="./wheel.png" alt="">
+            <img class="wheel-2" src="./wheel.png" alt="">
+        </div>
+        <div class="road"></div>
+    </section>
+    <script>
+        // this is for after scroll on, start to animation. use this when this is not at the top of page 
+        /* window.addEventListener('scroll', () => {
+            let car = document.querySelector('#caranim');
+            let carPosition = car.getBoundingClientRect().top;
+            let screenPosition = window.innerHeight;
+            if (carPosition < screenPosition) {
+                car.classList.add('animatedcar');
+            }
+        }); */
+    </script>
+</body>
+</html>

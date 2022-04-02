@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div id="carousel1" class="carousel-vertical">
+            <button class="btn-carousel btn-vertical carousel-prev">
+                <div class="carousel-arrow"></div>
+            </button>
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./blog_1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1 class="carousel-header">First Header</h1>
+                        <p class="carousel-text">First Text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./blog_2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1 class="carousel-header">First Header</h1>
+                        <p class="carousel-text">First Text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./blog_3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1 class="carousel-header">First Header</h1>
+                        <p class="carousel-text">First Text</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-carousel btn-vertical carousel-next">
+                <div class="carousel-arrow arrow-right"></div>
+            </button>
+            <div class="carousel-navigation nav-vertical"></div>
+        </div>
+    </section>
+
+    <section>
+        <div id="slider2" class="carousel-vertical">
+            <button class="btn-carousel carousel-prev">
+                <div class="carousel-arrow"></div>
+            </button>
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./blog_1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1 class="carousel-header">First Header</h1>
+                        <p class="carousel-text">First Text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./blog_2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1 class="carousel-header">First Header</h1>
+                        <p class="carousel-text">First Text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./blog_3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1 class="carousel-header">First Header</h1>
+                        <p class="carousel-text">First Text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./blog_3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1 class="carousel-header">First Header</h1>
+                        <p class="carousel-text">First Text</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-carousel carousel-next">
+                <div class="carousel-arrow arrow-right"></div>
+            </button>
+            <div class="carousel-navigation"></div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+    <script>
+        window.onload = function () {
+            var slider1 = new slider('#carousel1', sliderOptions = {
+                auto: true,      // autoplay on/off
+                time: 3,         // autoplay per second
+                reverse: false,  // reverse autoplay
+                nav: true,       // navigation buttons
+                arrows: true,    // next/prev arrows
+                vertical: true   // slide direction
+            });
+            var slider2 = new slider('#slider2');
+        }
+    </script>
+</body>
+
+</html>

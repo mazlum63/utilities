@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./my-grid.css">
+</head>
+
+<body>
+    <section>
+        <div id="slider1">
+            <div class="carousel">
+                <button class="btn-carousel carousel-prev">
+                    <div class="carousel-arrow"></div>
+                </button>
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="./blog_1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="./blog_2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="./blog_3.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="./blog_4.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="./blog_5.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="carousel-img" src="./blog_6.jpg" alt="">
+                    </div>
+                </div>
+                <button class="btn-carousel carousel-next">
+                    <div class="carousel-arrow arrow-right"></div>
+                </button>
+                <div class="carousel-navigation"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div id="slider2">
+                <div class="carousel">
+                    <button class="btn-carousel carousel-prev">
+                        <div class="carousel-arrow"></div>
+                    </button>
+                    <div class="carousel-container">
+                        <div class="carousel-item">
+                            <img class="carousel-img" src="./blog_1.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img" src="./blog_2.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img" src="./blog_3.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img" src="./blog_4.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img" src="./blog_5.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img" src="./blog_6.jpg" alt="">
+                        </div>
+                    </div>
+                    <button class="btn-carousel carousel-next">
+                        <div class="carousel-arrow arrow-right"></div>
+                    </button>
+                    <div class="carousel-navigation"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+    <script>
+        window.onload = function () {
+            // 1-carousel id
+            // 2-space between items
+            // 3-wiew size of items --- (you should not set view size more than items length)!!!!!
+            // 4-autoplay --- (if you want to autoplay, you shoul write 'true')!!!!!
+            var slider1 = new multiSlider('#slider1',);
+            var slider2 = new multiSlider('#slider2',
+                sliderOptions = {
+                    auto: true,
+                    time: 3,
+                    reverse: true,
+                    nav: false,
+                    arrows: false,
+                    space: 0,
+                    showedItems: 3,
+                    breakPoints: {
+                        576: {
+                            space: 20,
+                            showedItems: 2,
+                        },
+                        768: {
+                            space: 30,
+                            showedItems: 2
+                        },
+                        992: {
+                            space: 40,
+                            showedItems: 2
+                        },
+                        1200: {
+                            space: 0,
+                            showedItems: 2
+                        },
+                    },
+                });
+        }
+    </script>
+</body>
+
+</html>

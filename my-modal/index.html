@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./my-grid.css">
+</head>
+<body>
+    <section class="modal">
+        <a class="modal-link">
+            <img src="./contact-form.png" alt="">
+        </a>
+        <div class="modal-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                        <form action="#" method="post">
+                            <label for="modalName">AD-SOYAD</label>
+                            <input class="form-item" type="text" name="modalName" id="modalName">
+                            <label for="modalTel">TELEFON</label>
+                            <input class="form-item" type="tel" name="modalTel" id="modalTel">
+                            <label for="modalMessage">E-POSTA</label>
+                            <input class="form-item" type="email" name="modalEmail" id="modalEmail">
+                            <label for="modalTopic">KONU</label>
+                            <input class="form-item" type="text" name="modalTopic" id="modalTopic">
+                            <label for="modalMessage">MESAJ</label>
+                            <textarea class="form-item" name="modalMessage" id="modalMessage" rows="5"></textarea>
+                            <button type="submit">GONDER</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="w-100">
+        <img class="w-100" src="./contact-form.png" alt="">
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
